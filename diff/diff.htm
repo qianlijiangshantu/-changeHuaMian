@@ -1,0 +1,839 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+.ln {text-align: right; word-break: normal; color: #000000; background-color: #f0f0f0;}
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">D:\peixun\vue\FruitSystem\メンバへ\仕様変更\前ページ次ページ追加\変更前\index.html</th>
+<th colspan="2" class="title" style="width:50.000000%">D:\peixun\vue\FruitSystem\メンバへ\仕様変更\前ページ次ページ追加\変更後\index.html</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf13b2">!DOCTYPE html</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf13b2">!DOCTYPE html</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf7b2">html</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf7b2">html</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf7b2">head</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf7b2">head</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">http-equiv</span><span class="sf13b2">=</span><span class="sf12b2">"content-type"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"text/html; charset=UTF-8"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">http-equiv</span><span class="sf13b2">=</span><span class="sf12b2">"content-type"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"text/html; charset=UTF-8"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">name</span><span class="sf13b2">=</span><span class="sf12b2">"viewport"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"viewport"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"width=device-width,initial-sca<wbr>le=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">name</span><span class="sf13b2">=</span><span class="sf12b2">"viewport"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"viewport"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"width=device-width,initial-sca<wbr>le=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">name</span><span class="sf13b2">=</span><span class="sf12b2">"format-detection"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"telephone=no"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">meta</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">name</span><span class="sf13b2">=</span><span class="sf12b2">"format-detection"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">content</span><span class="sf13b2">=</span><span class="sf12b2">"telephone=no"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">link</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./css/reset.css"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">rel</span><span class="sf13b2">=</span><span class="sf12b2">"stylesheet"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/css"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">link</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./css/reset.css"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">rel</span><span class="sf13b2">=</span><span class="sf12b2">"stylesheet"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/css"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">link</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./css/index.css"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">rel</span><span class="sf13b2">=</span><span class="sf12b2">"stylesheet"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/css"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">link</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./css/index.css"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">rel</span><span class="sf13b2">=</span><span class="sf12b2">"stylesheet"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/css"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">head</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">head</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf7b2">body</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf7b2">body</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"near-box"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"app"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"near-box"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"app"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"index-bigbox"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"index-bigbox"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--轮播开始--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--轮播开始--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"slideBox"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"slideBox"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"slideBox"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"slideBox"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"bd"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"bd"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"bd"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"bd"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img2.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img3.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"pic"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"#"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./del/banner-img3.jpg"</span><span class="sf13b2">&nbsp;/</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">li</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"hd"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"hd"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">ul</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--搜索开始--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--搜索开始--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"brand-box1"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"brand-box1"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">input</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp; v-model=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp; name=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp;placeholder=</span><span class="sf12b2">"搜索"</span><span class="sf13b2">&nbsp;style=</span><span class="sf12b2">"text-align: center"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">input</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp; v-model=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp; name=</span><span class="sf12b2">"search"</span><span class="sf13b2">&nbsp;placeholder=</span><span class="sf12b2">"搜索"</span><span class="sf13b2">&nbsp;style=</span><span class="sf12b2">"text-align: center"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"search_img"</span><span class="sf13b2">&nbsp;v-on:click=</span><span class="sf12b2">"searchFruits"</span><span class="sf13b2">&nbsp;class=</span><span class="sf12b2">"index-top-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/search3.png"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">alt</span><span class="sf13b2">=</span><span class="sf12b2">""</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">id</span><span class="sf13b2">=</span><span class="sf12b2">"search_img"</span><span class="sf13b2">&nbsp;v-on:click=</span><span class="sf12b2">"searchFruits"</span><span class="sf13b2">&nbsp;class=</span><span class="sf12b2">"index-top-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/search3.png"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">alt</span><span class="sf13b2">=</span><span class="sf12b2">""</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--搜索结束--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--搜索结束--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--水果信息开始--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--水果信息开始--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-box3"</span><span class="sf13b2">&nbsp;v-cloak</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-box3"</span><span class="sf13b2">&nbsp;v-cloak</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-box4"</span><span class="sf13b2">&nbsp; v-for=</span><span class="sf12b2">"(fruits,index) in rows"</span><span class="sf13b2">:key=</span><span class="sf12b2">"index"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-box4"</span><span class="sf13b2">&nbsp; v-for=</span><span class="sf12b2">"(fruits,index) in rows"</span><span class="sf13b2">:key=</span><span class="sf12b2">"index"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"goods-details.html"</span><span class="sf13b2">&nbsp;:</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"'goods-details.html?fId='+fruits<wbr>.fid"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"goods-details.html"</span><span class="sf13b2">&nbsp;:</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"'goods-details.html?fId='+fruits<wbr>.fid"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;:</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"fruits.image"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">alt</span><span class="sf13b2">=</span><span class="sf12b2">""</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;:</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"fruits.image"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">alt</span><span class="sf13b2">=</span><span class="sf12b2">""</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-tbox"</span><span class="sf11b2">&gt;{{</span><span class="sf3b2">fruits.titl<wbr>e</span><span class="sf11b2">}}{{</span><span class="sf3b2">fruits.specification</span><span class="sf11b2">}}&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-tbox"</span><span class="sf11b2">&gt;{{</span><span class="sf3b2">fruits.titl<wbr>e</span><span class="sf11b2">}}{{</span><span class="sf3b2">fruits.specification</span><span class="sf11b2">}}&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-text2"</span><span class="sf11b2">&gt;</span><span class="sf3b2">￥</span><span class="sf11b2">{{</span><span class="sf3b2">fruits.pr<wbr>iceStr</span><span class="sf11b2">}}&lt;</span><span class="sf7b2">i</span><span class="sf11b2">&gt;</span><span class="sf3b2">￥</span><span class="sf11b2">{{</span><span class="sf3b2">fruits.priceOffStr</span><span class="sf11b2">}}&lt;</span><span class="sf13b2">/</span><span class="sf7b2">i</span><span class="sf11b2">&gt;&lt;<wbr></span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"special-sale-text2"</span><span class="sf11b2">&gt;</span><span class="sf3b2">￥</span><span class="sf11b2">{{</span><span class="sf3b2">fruits.pr<wbr>iceStr</span><span class="sf11b2">}}&lt;</span><span class="sf7b2">i</span><span class="sf11b2">&gt;</span><span class="sf3b2">￥</span><span class="sf11b2">{{</span><span class="sf3b2">fruits.priceOffStr</span><span class="sf11b2">}}&lt;</span><span class="sf13b2">/</span><span class="sf7b2">i</span><span class="sf11b2">&gt;&lt;<wbr></span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">table</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">style</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"clear: both;"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">tr</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">td</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">style</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"padding:15px;"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">button</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;:</span><span style="color: #000000; background-color: #efcb05; ">disabled</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"disabledFlagPre"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">id</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"previousPage"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp; </span><span style="color: #000000; background-color: #efcb05; ">style</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">" width:100px;cursor: pointer;background-color: #bbfad3;border-radius: 10px;"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;@click=</span><span style="color: #000000; background-color: #efcb05; ">"previousPage()"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">上一页</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">button</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">t<wbr>d</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">td</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">style</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"padding:15px;"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">button</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;:</span><span style="color: #000000; background-color: #efcb05; ">disabled</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"disabledFlagNext"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">id</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">"nextPage"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">style</span><span style="color: #000000; background-color: #efcb05; ">=</span><span style="color: #000000; background-color: #efcb05; ">" width:100px;cursor: pointer;background-color: #bbfad3;border-radius: 10px;"</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;@click=</span><span style="color: #000000; background-color: #efcb05; ">"nextPage()"</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span><span style="color: #000000; background-color: #efcb05; ">下一页</span><span style="color: #000000; background-color: #efcb05; ">&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">button</span><span style="color: #000000; background-color: #efcb05; ">&gt;&lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">td</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">tr</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">table</span><span style="color: #000000; background-color: #efcb05; ">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--水果信息结束--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--水果信息结束--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--bigbox结束--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--bigbox结束--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">div</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./index.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./index.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/home.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/home.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1 text2"</span><span class="sf11b2">&gt;</span><span class="sf3b2">首页</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1 text2"</span><span class="sf11b2">&gt;</span><span class="sf3b2">首页</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./shoping-cart.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./shoping-cart.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/shop-cart1.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/shop-cart1.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1"</span><span class="sf11b2">&gt;</span><span class="sf3b2">购物车</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1"</span><span class="sf11b2">&gt;</span><span class="sf3b2">购物车</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./personal-center.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">a</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">href</span><span class="sf13b2">=</span><span class="sf12b2">"./personal-center.html"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-box1"</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/people1.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-img1"</span><span class="sf11b2">&gt;&lt;</span><span class="sf7b2">img</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"./images/people1.png"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1"</span><span class="sf11b2">&gt;</span><span class="sf3b2">我的</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">span</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">class</span><span class="sf13b2">=</span><span class="sf12b2">"kaola-bottom-text1"</span><span class="sf11b2">&gt;</span><span class="sf3b2">我的</span><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">span</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">a</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">div</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/jquery-1.8.3.min.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/jquery-1.8.3.min.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/TouchSlide.1.1.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/TouchSlide.1.1.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--点击箭头滚到顶部--&gt;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf9b2">&lt;!--点击箭头滚到顶部--&gt;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/scrolltopcontrol.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/scrolltopcontrol.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/vue.min.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/vue.min.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/axios-0.18.0.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">type</span><span class="sf13b2">=</span><span class="sf12b2">"text/javascript"</span><span class="sf13b2">&nbsp;</span><span class="sf20b2">src</span><span class="sf13b2">=</span><span class="sf12b2">"js/axios-0.18.0.js"</span><span class="sf11b2">&gt;&lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">new</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Vue</span><span class="sf11b2">({</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">new</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">Vue</span><span class="sf11b2">({</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">el</span><span class="sf11b2">:"#</span><span class="sf3b2">app</span><span class="sf11b2">",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">el</span><span class="sf11b2">:"#</span><span class="sf3b2">app</span><span class="sf11b2">",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">:{</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">data</span><span class="sf11b2">:{</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">page</span><span class="sf11b2">:</span><span class="sf3b2">1</span><span class="sf11b2">, &nbsp; //</span><span class="sf3b2">当前页数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">page</span><span class="sf11b2">:</span><span class="sf3b2">1</span><span class="sf11b2">, &nbsp; //</span><span class="sf3b2">当前页数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">size</span><span class="sf11b2">:</span><span class="sf3b2">9</span><span class="sf11b2">, &nbsp; //</span><span class="sf3b2">数量</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">size</span><span class="sf11b2">:</span><span class="sf3b2">9</span><span class="sf11b2">, &nbsp; //</span><span class="sf3b2">数量</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">totalPage</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span style="color: #000000; background-color: #efcb05; ">//</span><span style="color: #000000; background-color: #efcb05; ">总页数</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">// 2022/6/21 fan change start</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // </span><span style="color: #000000; background-color: #efcb05; ">totalPage</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">,</span><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">//</span><span style="color: #000000; background-color: #efcb05; ">总页数</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; totalPage:1, &nbsp; &nbsp; &nbsp; &nbsp;//总页数</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b18">// 2022/6/21 fan change end</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">rows</span><span class="sf11b2">:[ &nbsp;//</span><span class="sf3b2">水果信息</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">rows</span><span class="sf11b2">:[ &nbsp;//</span><span class="sf3b2">水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">title</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">title</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">specification</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">specification</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">supplier</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">supplier</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">priceStr</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">priceStr</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">priceOffStr</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">priceOffStr</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fruitsImages</span><span class="sf11b2">": [</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fruitsImages</span><span class="sf11b2">": [</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fiId</span><span class="sf11b2">": </span><span class="sf3b2">0</span><span class="sf11b2">,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fiId</span><span class="sf11b2">": </span><span class="sf3b2">0</span><span class="sf11b2">,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">image</span><span class="sf11b2">": "/",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">image</span><span class="sf11b2">": "/",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fruitsImageDetails</span><span class="sf11b2">": [</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fruitsImageDetails</span><span class="sf11b2">": [</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fidId</span><span class="sf11b2">": </span><span class="sf3b2">0</span><span class="sf11b2">,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fidId</span><span class="sf11b2">": </span><span class="sf3b2">0</span><span class="sf11b2">,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">image</span><span class="sf11b2">": "",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">image</span><span class="sf11b2">": "",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "</span><span class="sf3b2">fid</span><span class="sf11b2">": </span><span class="sf3b2">0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ],</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">search</span><span class="sf11b2">:"", &nbsp; &nbsp;//</span><span class="sf3b2">要搜索的内容</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">search</span><span class="sf11b2">:"", &nbsp; &nbsp;//</span><span class="sf3b2">要搜索的内容</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">disabledFlagPre</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">disabledFlagNext</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">false</span><span style="color: #000000; background-color: #efcb05; ">,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">methods</span><span class="sf11b2">:{</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">methods</span><span class="sf11b2">:{</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span class="sf3b2">获取水果信息</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span class="sf3b2">获取水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">init</span><span class="sf11b2">(){</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">init</span><span class="sf11b2">(){</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">axios.get</span><span class="sf11b2">(`/</span><span class="sf3b2">fruits</span><span class="sf11b2">?</span><span class="sf3b2">page</span><span class="sf11b2">=${</span><span class="sf3b2">this.page</span><span class="sf11b2">}&amp;</span><span class="sf3b2">si<wbr>ze=${this.size}`).then(response =&gt; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">axios.get</span><span class="sf11b2">(`/</span><span class="sf3b2">fruits</span><span class="sf11b2">?</span><span class="sf3b2">page</span><span class="sf11b2">=${</span><span class="sf3b2">this.page</span><span class="sf11b2">}&amp;</span><span class="sf3b2">si<wbr>ze=${this.size}`).then(response =&gt; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.rows</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.rows</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">水果信息</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.rows</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.rows</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d4" href="#d4">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">当前页数</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">// 2022/6/21 fan change start</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.totalPage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">response.data.</span><span class="sf17b16">p</span><span style="color: #000000; background-color: #efcb05; ">age</span><span style="color: #000000; background-color: #efcb05; ">; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">获取总页数</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span class="sf17b16">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">当前页数</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.totalPage</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;= </span><span style="color: #000000; background-color: #efcb05; ">response.data.</span><span class="sf17b16">totalP</span><span style="color: #000000; background-color: #efcb05; ">age</span><span style="color: #000000; background-color: #efcb05; ">; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">获取总页数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">this.rows</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">this.rows</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d5" href="#d5">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.disabledFlagPre</span><span style="color: #000000; background-color: #efcb05; ">=(</span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">==</span><span style="color: #000000; background-color: #efcb05; ">1</span><span style="color: #000000; background-color: #efcb05; ">)?</span><span style="color: #000000; background-color: #efcb05; ">tru<wbr>e</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">false</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.disabledFlagNext</span><span style="color: #000000; background-color: #efcb05; ">=(</span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">==</span><span style="color: #000000; background-color: #efcb05; ">this.<wbr>totalPage</span><span style="color: #000000; background-color: #efcb05; ">)?</span><span style="color: #000000; background-color: #efcb05; ">true</span><span style="color: #000000; background-color: #efcb05; ">:</span><span style="color: #000000; background-color: #efcb05; ">false</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">// </span><span style="color: #000000; background-color: #efcb05; ">2022</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">6</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">21</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">fan</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">change</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">end</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span><span class="sf3b2">.catch</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span><span class="sf3b2">.catch</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">alert</span><span class="sf11b2">(</span><span class="sf3b2">err.response.data.message</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">alert</span><span class="sf11b2">(</span><span class="sf3b2">err.response.data.message</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d6" href="#d6">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">// </span><span style="color: #000000; background-color: #efcb05; ">2022</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">6</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">21</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">fan</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">add</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">start</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">获取nextPage水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">nextPage</span><span style="color: #000000; background-color: #efcb05; ">(){</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">++; //</span><span style="color: #000000; background-color: #efcb05; ">当前页数</span><span style="color: #000000; background-color: #efcb05; ">+</span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.init</span><span style="color: #000000; background-color: #efcb05; ">();</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span style="color: #000000; background-color: #efcb05; ">获取beforePage水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">previousPage</span><span style="color: #000000; background-color: #efcb05; ">(){</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.page</span><span style="color: #000000; background-color: #efcb05; ">-- &nbsp;//</span><span style="color: #000000; background-color: #efcb05; ">当前页数</span><span style="color: #000000; background-color: #efcb05; ">-</span><span style="color: #000000; background-color: #efcb05; ">1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color: #000000; background-color: #efcb05; ">this.init</span><span style="color: #000000; background-color: #efcb05; ">();</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">// </span><span style="color: #000000; background-color: #efcb05; ">2022</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">6</span><span style="color: #000000; background-color: #efcb05; ">/</span><span style="color: #000000; background-color: #efcb05; ">21</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">fan</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">add</span><span style="color: #000000; background-color: #efcb05; ">&nbsp;</span><span style="color: #000000; background-color: #efcb05; ">end</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span class="sf3b2">搜索水果信息</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //</span><span class="sf3b2">搜索水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">searchFruits</span><span class="sf11b2">(){</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">searchFruits</span><span class="sf11b2">(){</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">axios.get</span><span class="sf11b2">(`/</span><span class="sf3b2">fruits</span><span class="sf11b2">?</span><span class="sf3b2">search</span><span class="sf11b2">=${</span><span class="sf3b2">this.search<wbr></span><span class="sf11b2">}`)</span><span class="sf3b2">.then</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">axios.get</span><span class="sf11b2">(`/</span><span class="sf3b2">fruits</span><span class="sf11b2">?</span><span class="sf3b2">search</span><span class="sf11b2">=${</span><span class="sf3b2">this.search<wbr></span><span class="sf11b2">}`)</span><span class="sf3b2">.then</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">response</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.rows</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.rows</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">水果信息</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.rows</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.rows</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">水果信息</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.page</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">this.page</span><span class="sf11b2">+</span><span class="sf3b2">1</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">当前页数</span><span class="sf11b2">+</span><span class="sf3b2">1</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.page</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">this.page</span><span class="sf11b2">+</span><span class="sf3b2">1</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">当前页数</span><span class="sf11b2">+</span><span class="sf3b2">1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.totalPage</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.page</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">获取总页数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.totalPage</span><span class="sf11b2">&nbsp;= </span><span class="sf3b2">response.data.page</span><span class="sf11b2">; &nbsp; //</span><span class="sf3b2">获取总页数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">this.rows</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">this.rows</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span><span class="sf3b2">.catch</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span><span class="sf3b2">.catch</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">&nbsp;=&gt; {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">console.log</span><span class="sf11b2">(</span><span class="sf3b2">err</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">alert</span><span class="sf11b2">(</span><span class="sf3b2">err.response.data.message</span><span class="sf11b2">);</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">alert</span><span class="sf11b2">(</span><span class="sf3b2">err.response.data.message</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">created</span><span class="sf11b2">(){</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">created</span><span class="sf11b2">(){</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.init</span><span class="sf11b2">();</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">this.init</span><span class="sf11b2">();</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; })</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(</span><span class="sf3b2">function</span><span class="sf11b2">() {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $(</span><span class="sf3b2">function</span><span class="sf11b2">() {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">TouchSlide</span><span class="sf11b2">({</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">TouchSlide</span><span class="sf11b2">({</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">slideCell</span><span class="sf11b2">: "#</span><span class="sf3b2">slideBox</span><span class="sf11b2">",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">slideCell</span><span class="sf11b2">: "#</span><span class="sf3b2">slideBox</span><span class="sf11b2">",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">titCell</span><span class="sf11b2">: "</span><span class="sf3b2">.hd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ul</span><span class="sf11b2">", //</span><span class="sf3b2">开启自动分页</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">autoPage</span><span class="sf11b2">:</span><span class="sf3b2">true</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">，此时设置</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">titCell</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">为导航元素包裹层</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">titCell</span><span class="sf11b2">: "</span><span class="sf3b2">.hd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ul</span><span class="sf11b2">", //</span><span class="sf3b2">开启自动分页</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">autoPage</span><span class="sf11b2">:</span><span class="sf3b2">true</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">，此时设置</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">titCell</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">为导航元素包裹层</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">mainCell</span><span class="sf11b2">: "</span><span class="sf3b2">.bd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ul</span><span class="sf11b2">",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">mainCell</span><span class="sf11b2">: "</span><span class="sf3b2">.bd</span><span class="sf11b2">&nbsp;</span><span class="sf3b2">ul</span><span class="sf11b2">",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">effect</span><span class="sf11b2">: "</span><span class="sf3b2">leftLoop</span><span class="sf11b2">",</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">effect</span><span class="sf11b2">: "</span><span class="sf3b2">leftLoop</span><span class="sf11b2">",</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">autoPage</span><span class="sf11b2">: </span><span class="sf3b2">false</span><span class="sf11b2">, //</span><span class="sf3b2">自动分页</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">autoPage</span><span class="sf11b2">: </span><span class="sf3b2">false</span><span class="sf11b2">, //</span><span class="sf3b2">自动分页</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">autoPlay</span><span class="sf11b2">: </span><span class="sf3b2">true</span><span class="sf11b2">, //</span><span class="sf3b2">自动播放</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="sf3b2">autoPlay</span><span class="sf11b2">: </span><span class="sf3b2">true</span><span class="sf11b2">, //</span><span class="sf3b2">自动播放</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; });</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">script</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">body</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&nbsp; &nbsp; &lt;</span><span class="sf13b2">/</span><span class="sf7b2">body</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">html</span><span class="sf11b2">&gt;</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf11b2">&lt;</span><span class="sf13b2">/</span><span class="sf7b2">html</span><span class="sf11b2">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
